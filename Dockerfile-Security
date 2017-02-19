@@ -1,0 +1,4 @@
+FROM microsoft/dotnet:1.0-runtime
+ADD ./publish /app 
+WORKDIR /app
+CMD ["dotnet", "MyCompany.Security.Server.dll"]
