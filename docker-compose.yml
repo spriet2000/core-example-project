@@ -1,0 +1,52 @@
+version: '3'
+services:
+  frontend_Portal:
+    image: microsoft/dotnet:1.0-runtime
+    command: bash -c "cd /app  && dotnet MyCompany.Frontend.Portal.dll" 
+    volumes: 
+        - ./MyCompany.Frontend.Portal/out:/app
+    ports:
+     - "5001:5001"
+    environment:
+     - ASPNETCORE_URLS=http://*:5001
+     - ASPNETCORE_ENVIRONMENT=Production
+  gateway_Portal:
+    image: microsoft/dotnet:1.0-runtime 
+    command: bash -c "cd /app  && dotnet MyCompany.Gateways.Portal.dll" 
+    volumes: 
+        - ./MyCompany.Gateways.Portal/out:/app
+    ports:
+     - "5002:5002"     
+    environment:
+     - ASPNETCORE_URLS=http://*:5002
+     - ASPNETCORE_ENVIRONMENT=Production   
+  frontend_savingsfree:
+    image: microsoft/dotnet:1.0-runtime   
+    command: bash -c "cd /app  && dotnet MyCompany.Frontend.Portal.dll" 
+    volumes: 
+        - ./MyCompany.Frontend.Portal/out:/app  
+    ports:
+     - "5003:5003"
+    environment:
+     - ASPNETCORE_URLS=http://*:5003
+     - ASPNETCORE_ENVIRONMENT=Production   
+  gateway_savingsfree:
+    image: microsoft/dotnet:1.0-runtime    
+    command: bash -c "cd /app  && dotnet MyCompany.Gateways.Portal.dll" 
+    volumes: 
+        - ./MyCompany.Gateways.Portal/out:/app  
+    ports:
+     - "5004:5004"     
+    environment:
+     - ASPNETCORE_URLS=http://*:5004
+     - ASPNETCORE_ENVIRONMENT=Production     
+  security_server:
+    image: microsoft/dotnet:1.0-runtime    
+    command: bash -c "cd /app  && dotnet MyCompany.Security.Server.dll" 
+    volumes: 
+        - ./MyCompany.Security.Server/out:/app  
+    ports:
+     - "5005:5005"     
+    environment:
+     - ASPNETCORE_URLS=http://*:5005
+     - ASPNETCORE_ENVIRONMENT=Production        

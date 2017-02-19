@@ -1,0 +1,264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"frontend.clientdomain\t(build.sh)"
+			],
+			[
+				"h",
+				"html\thtml"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"HTML",
+				"Set Syntax: HTML"
+			],
+			[
+				"G",
+				"Gulp"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INsta",
+				"Package Control: Install Package"
+			],
+			[
+				"Prefer",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/spriet4000/Desktop/MyCompany"
+	],
+	"file_history":
+	[
+		"/Users/spriet4000/Desktop/MyCompany/docker-compose.yml",
+		"/Users/spriet4000/Desktop/MyCompany/build.sh",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Frontend.SavingsFree/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Gateways.SavingsFree/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Gateways.ClientDomain/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Security.Server/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/publish/MyCompany.Frontend.ClientDomain.runtimeconfig.json",
+		"/Users/spriet4000/Desktop/MyCompany/publish/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Frontend.ClientDomain/Dockerfile",
+		"/Users/spriet4000/Desktop/MyCompany/publish/appsettings.json",
+		"/Users/spriet4000/Desktop/MyCompany/MyCompany.Frontend.ClientDomain/project.json",
+		"/Users/spriet4000/Desktop/untitled folder/MyCompany/MyCompany.sln",
+		"/Users/spriet4000/Desktop/untitled folder/MyCompany/MyCompany.Security.Server/project.json",
+		"/Users/spriet4000/Desktop/untitled folder/MyCompany/MyCompany.ClientDomain/project.json",
+		"/Users/spriet4000/Desktop/app/bundle.js",
+		"/Users/spriet4000/Desktop/Vakantie vietnam",
+		"/Users/spriet4000/Desktop/vietnam",
+		"/Users/spriet4000/RiderProjects/Webserver1/Webserver1.Tests/project.json",
+		"/Users/spriet4000/RiderProjects/Webserver1/Webserver1.Tests/Webserver1.Tests.xproj",
+		"/Users/spriet4000/Desktop/integration",
+		"/Users/spriet4000/Library/Mobile Documents/com~apple~CloudDocs/wiki",
+		"/Users/spriet4000/Desktop/integration party",
+		"/Users/spriet4000/Library/Mobile Documents/com~apple~CloudDocs/vertx-handlers/src/main/java/com/github/spriet2000/vertx/handlers/Handlers2.java",
+		"/Users/spriet4000/Desktop/iis/Dockerfile",
+		"/Users/spriet4000/Desktop/Dockerfile",
+		"/Users/spriet4000/RiderProjects/Slurq/Slurq/project.json",
+		"/Users/spriet4000/RiderProjects/Slurq/Slurq/Slurq.xproj",
+		"/Users/spriet4000/Desktop/remove-net.sh",
+		"/Users/spriet4000/Desktop/aspnet/test/SampleTest.cs",
+		"/Users/spriet4000/Desktop/aspnet/test/project.json",
+		"/Users/spriet4000/Desktop/handlers/pom.xml",
+		"/Users/spriet4000/Downloads/Phases10-25x-2w.svg",
+		"/Users/spriet4000/Desktop/js/public/lib/functional.js",
+		"/Users/spriet4000/Desktop/js/package.json",
+		"/Users/spriet4000/Desktop/js/gulpfile.js",
+		"/Users/spriet4000/Desktop/js/public/lib/example1.js",
+		"/Users/spriet4000/Desktop/js/public/lib/example2.js",
+		"/Users/spriet4000/Desktop/js/bower.json",
+		"/Users/spriet4000/Desktop/js/public/lib/application.js",
+		"/Users/spriet4000/Desktop/js/public/index.html",
+		"/Users/spriet4000/Desktop/js/public/css/style.css",
+		"/Users/spriet4000/Desktop/js/js.sublime-project",
+		"/Users/spriet4000/Desktop/js/javascripts/gulp.js",
+		"/Users/spriet4000/Desktop/js/index.html",
+		"/Users/spriet4000/Desktop/js/javascripts/application.js",
+		"/Users/spriet4000/Desktop/js/javascripts.js",
+		"/Users/spriet4000/Desktop/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "mycompanu.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 333.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
