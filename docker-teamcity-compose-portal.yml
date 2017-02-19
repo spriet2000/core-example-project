@@ -1,0 +1,54 @@
+version: '2'
+services:
+  teamcity-data:
+    image: busybox
+    volumes:
+    - /var/lib/teamcity
+    tty: true
+    links:
+    - postgres:db
+  postgres-data:
+    image: busybox
+    volumes:
+    - /var/lib/postgresql/data/pgdata
+    tty: true
+  teamcity-server:
+    image: sjoerdmulder/teamcity:latest
+    environment:
+      http_proxy: ''
+      https_proxy: ''
+    links:
+    - postgres:db
+    volumes_from:
+    - teamcity-data
+    ports:
+    - 8111:8111/tcp
+    labels:
+      io.rancher.sidekicks: teamcity-data
+  teamcity-agent-java:
+    image: sjoerdmulder/teamcity-agent:latest
+    environment:
+      TEAMCITY_SERVER: http://teamcity-server:8111
+    links:
+    - teamcity-server:teamcity-server
+  teamcity-agent-net:
+    image: mappies/teamcity-agent-dotnet-core:latest
+    environment:
+      SERVER_URL: http://teamcity-server:8111
+    links:
+    - teamcity-server:teamcity-server
+  postgres:
+    image: postgres:latest
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: teamcity
+      POSTGRES_PASSWORD: teamcity
+      POSTGRES_USER: teamcity
+    stdin_open: true
+    tty: true
+    volumes_from:
+    - postgres-data
+    ports:
+    - 5432:5432/tcp
+    labels:
+      io.rancher.sidekicks: postgres-data

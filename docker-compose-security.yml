@@ -1,0 +1,12 @@
+version: '3'
+services:  
+  security_server:
+    image: microsoft/dotnet:1.0-runtime    
+    command: bash -c "cd /app  && dotnet MyCompany.Security.Server.dll" 
+    volumes: 
+        - ./MyCompany.Security.Server/out:/app  
+    ports:
+     - "5005:5005"     
+    environment:
+     - ASPNETCORE_URLS=http://*:5005
+     - ASPNETCORE_ENVIRONMENT=Production        
